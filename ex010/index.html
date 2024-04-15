@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1><!--A função <a/a> e usada  para adicionar links no geral-->
+    <p>Acesse o meu site favorito <a href="https://www.netshoes.com.br/?gclid=Cj0KCQjwnrmlBhDHARIsADJ5b_lygd2KCNVHutUiA4mWc7V3ZGNzzUbGJr5YG27_HIu2c3Im13nEkZEaAoL8EALw_wcB&gclsrc=aw.ds" target="_blank" rel="nofollow">Clicando aqui</a>.</p>
+    <!--No target= nos definimos se iremos abrir uma pagina nova ou vamos utilizar a mesma pagina-->
+    <!--O rel= e usado para especificar a relação com o documento-->
+    <hr>
+    <h1>Usando links internos</h1>
+    <p>Esta e a primeira pagina do site.<br>Se voce quiser pode acessar tambem nossa... <a href="pag02.html" target="_self" rel="next">Segunda pagina</a></p><!--next significa prxima pagina-->
+    <p>Ou se prefirir pode acessar nossa... <a href="outras/pag03.html" target="_self" rel="next">Terceira pagina</a></p><!--link de uma pagina vinda de outra pasta-->
+    <hr>
+    <h1>Links para download</h1>
+    <p>Aqui esta disponivel o link para baixar o guia!</p>
+    <ul>
+        <!--Tambem e possivel adicionar o link para baixar algum conteudo-->
+        <!--Em download= dar um nome para o arquivo, e type= especificar o tipo (pesquisar o tipo antes)-->
+        <li><a href="conteudo/ExplorersGuide.pdf" download="Guia ZBOTW" type="application/pdf">Baixe aqui o Guia</a></li>
+    </ul>
+</body>
+</html>

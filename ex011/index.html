@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em html5</title>
+</head>
+<body>
+    
+    <h1>Imagem Dinamica</h1>
+    <hr>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente <br>
+    aumente ou diminua o tamanho do seu navegador.</p>
+    <!--A tag <picture> e usada para exibir imagens em diferentes tamanhos na tela-->
+    <picture>
+        
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png"><!--A imagem em 2º ira se adapta ao tamanho pequeno-->
+        
+        <!--A tag <source media> e usada para definir o tamanho da imagem ou ate o formato de forma dinamica-->
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png"><!--A imagem 1º ira se adapta ao tamanho medio-->
+        
+        <img src="imagens/foto-g.png" alt="Imagem dinamica"><!--Imagem original de tamanho grande-->
+    </picture>
+    
+    <hr>
+    
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5!</p>
+    <!--A tag <audio> e usada para incorporar e reproduzir arquivos de audio-->
+    <audio preload="metadata" controls loop>
+       
+        <!--A tag <source src> e usada para aplicar os arquivos-->
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg"><!--arquivo tipo mp3-->
+        
+        <!--segunda tentativa, caso a primeira não funcione DEPENDE DO NAVEGADOR-->
+        <source src="midia/happy-mistake.mp3" type="audio/ogg"><!--arquivo tipo ogg-->
+        
+        <!--Esta opção somente aparecera para usuario caso o navegador não permita a reprodução de nenhum tipo de audio acima-->
+        <p>Infelizmente seu navegador não permite a reprodução do audio!</p>
+        <ul>
+            <li>Clique <a href="midia/happy-mistake.mp3" download="Trilha sonora" type="audio/mpeg">aqui</a> para baixar.</li>
+        </ul>
+    </audio>
+
+</body>
+</html>

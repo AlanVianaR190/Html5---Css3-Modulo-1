@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedado localmente</h1>
+    <hr>
+    <p>Este video esta hospedado no meu proprio servidor!</p>
+    <!--A tag <video> e usada para incorporar e reproduzir arquivos de video-->
+    <video width="560" poster="imagens/limoes-capa.png" preload="metadata" controls>
+        
+        <!--A tag <source src> usada para aplicar o arquivo-->
+        <source src="midia/meu-video.mp4" type="video/mp4"><!--arquivos do tipo mp4-->
+        
+        <!--segunda tentativa, caso a primeira não funcione DEPENDE DO NAVEGADOR-->
+        <source src="midia/meu-video.m4v" type="video/mp4">
+        
+        <!--terceira tentativa-->
+        <source src="midia/meu-video.webm" type="video/webm"><!--arquivos do tipo web-->
+        
+        <!--quarta tentativa-->
+        <source src="midia/meu-video.ogv" type="video/ogg"><!--arquivo do tipo ogg-->
+
+        <p>Infelizmente seu navegador não permite a reprodução do video!</p>
+    </video>
+    
+    <hr>
+    
+    <h1>Inserindo videos do YouTube</h1>
+    <!--Link com a tag copiado da aba compartilhar e incorporar do youtube-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <h1>Inserindo videos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/259640331?h=9ac678a7d8&color=c9ff23&title=0" width="640" height="360" frameborder="0" 
+    allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    
+    <p><a href="https://vimeo.com/259640331">Lemon Planet Animation Reel 2018</a> from <a href="https://vimeo.com/lemonplanet">Lemon Planet</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</body>
+</html>
